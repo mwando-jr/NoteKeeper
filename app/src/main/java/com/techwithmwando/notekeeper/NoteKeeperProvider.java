@@ -118,7 +118,7 @@ public class NoteKeeperProvider extends ContentProvider {
         switch (uriMatch) {
             case NOTES:
                 rowId = db.insert(NoteInfoEntry.TABLE_NAME, null, values);
-                // content://com.techwithmwando.jim.notekeeper.provider/notes/1
+                // content://com.techwithmwando.notekeeper.provider/notes/1
                 rowUri = ContentUris.withAppendedId(Notes.CONTENT_URI, rowId);
                 break;
             case COURSES:
